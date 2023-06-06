@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+// button
+
+// konfirmasi
+.konfirmasi {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 30px;
+  margin: 20px;
+  border: 1px solid #ccc;
+
+  .rincian {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+
+    .rincian-title {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .rincian-desc {
+      align-self: flex-start; 
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 10px;
+
+      .desc-title {
+        font-weight: bold;
+      }
+
+      .desc-payment {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .payment-pilih {
+          font-weight: bold;
+          margin-right: 10px;
+          font-style: italic;
+        }
+
+        .payment-text {
+          padding: 5px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          .text-nomor {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .next {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .next-note {
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+    .next-link {
+      align-self: flex-end;
+      text-decoration: none;
+      padding: 10px;
+      background-color: #1890ff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+  
+      &:hover {
+        background-color: #40a9ff;
+      }
+    }
+  }
+}
